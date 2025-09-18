@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajid's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio.</div>
+        <div>
+            <ul class="nav-links">
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#experience">Experience</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#Contact">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mohammad Sajid</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
+                <li> <a href="#experience" onclick="toggleMenu()">Experience</a> </li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a> </li>
+                <li> <a href="#Contact" onclick="toggleMenu()">Contact</a> </li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/about pic.png" alt="Sajid Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title"><span id="typed-name" aria-label="Md.Sajid Talukder"></span></h1>
+            <p class="section_text_p2"> Bioinformatics and medical imaging enthusiast | Social Worker | Educator| Gym trainer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume sajid.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" 
+                alt="My LinkedIn Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/mohammad-sajid-talukder/'">
+                <img src="./assets/github.png" 
+                alt="My GitHub Profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/mohammad-sajid-talukder'">
+            </div>
+        </div>
+    </section>
+ <section id="about"> 
+  <p class="section_text_p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+
+  <div class="about-layout">
+    <!-- Profile Picture -->
+    <div class="section__pic-container">
+      <img src="./assets/about picc.png" alt="Profile Picture" class="about-pic">
+    </div>
+
+    <!-- Work + Education -->
+    <div class="about-details-container">
+      <div class="details-wrapper">
+        <!-- Work Experience -->
+        <div class="details-container">
+          <h3><i class="fa-solid fa-award"></i> Work Experience</h3>
+          <ul class="experience-list">
+            <li>
+              <div class="experience-date">Dec 2024 – Present</div>
+              <h4>Lab Assistant</h4>
+              <p>Oriental Medicine & Bioinformatics Laboratory</p>
+            </li>
+            <li>
+              <div class="experience-date">Oct 2025 – Dec 2025</div>
+              <h4>Molecular Biology Techniques</h4>
+              <p>Invent Technologies Ltd.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="details-container">
+          <h3><i class="fa-solid fa-user-graduate"></i> Education</h3>
+          <ul class="education-list">
+            <li>
+              <div class="education-date">2026 – Present</div>
+              <h4>PhD in Biomedical Genetics and Genomics</h4>
+              <p>University of Rochester,New York, USA </p>
+            </li>
+            <li>
+              <div class="education-date">2022 – 2026</div>
+              <h4>BSc in Biomedical Engineering</h4>
+              <p>Islamic University,Bangladesh
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- About Text -->
+      <div class="text-container">
+        <p>
+         Biomedical Engineering graduate with a strong interest in biomedical research, bioinformatics, and medical imaging. Beyond academics, I actively contribute as an educator, social worker, and fitness trainer, reflecting a holistic approach to personal and professional growth. My goal is to integrate interdisciplinary skills to drive impactful solutions in science and society.
+        </p>
+      </div>
+    </div>
+  </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" onclick="location.href='./#about'">
+</section>
+   <section id="experience">
+      <p class="section_text_p1">Explore My
+        <h1 class="title">Expertise</h1>
+        <div class="experience-details-container">
+          <div class="about-containers-row">
+            <div class="details-containers">
+              <h2 class="experience-sub-title">Molecular Biology Techniques</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>PCR</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>qPCR</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>DNA/RNA Extraction & Purification</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>Gel Electrophoresis</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>Cloning & transformation</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>Pipetting & sterile Handling</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>ELISA</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>Aseptic Handling</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-containers">
+              <h2 class="experience-sub-title">Software & Programming Proficiencies</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon">
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>Machine Learning</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>Html</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>R</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./Assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon">
+                  <div>
+                    <h3>Microsoft Office</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+       <img src="./Assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="projects-grid">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-1.png" 
+                 alt="Project 1" 
+                 class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Image Processing</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-3.png" 
+                 alt="Project 3" 
+                 class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Bioinformatics Project</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-2.png" 
+                 alt="Project 2" 
+                 class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Dna/Rna Sequence Classification Tool</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-4.png" 
+                 alt="Project 4" 
+                 class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Lab Data Analyzer</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-5.png" 
+                 alt="Project 5" 
+                 class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Health Monitoring Dashboard</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-6.png" 
+                 alt="Project 6" 
+                 class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Multimodal disease prediction</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohammad-sajid-talukder'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <img src="./Assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">Available at your convenience</p>
+      <h1 class="title">Let’s connect</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./Assets/email.png" 
+          alt="Email icon" 
+          class="icon contact-icon email-icon">
+          <p> <a href="mailto:sajidiubme2029012@gmail.com">sajidiubme2029012@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./Assets/linkedin.png" 
+          alt="Linkedin icon" 
+          class="icon contact-icon">
+          <p> <a href="https://www.linkedin.com/in/mohammad-sajid-talukder/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#experience">Experience</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+            </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Mohammad Sajid. All Rights Reserved.</p>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>
